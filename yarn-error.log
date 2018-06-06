@@ -1,8 +1,8 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\Carlos\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js run dev-server
+  c:\Program Files\nodejs\node.exe c:\Users\Carlos\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js run build:prod
 
 PATH: 
-  C:\Users\Carlos\Everything Python\CMDER\bin;C:\Users\Carlos\Everything Python\CMDER\vendor\conemu-maximus5\ConEmu\Scripts;C:\Users\Carlos\Everything Python\CMDER\vendor\conemu-maximus5;C:\Users\Carlos\Everything Python\CMDER\vendor\conemu-maximus5\ConEmu;c:\programdata\oracle\java\javapath;c:\program files (x86)\intel\icls client\;c:\program files\intel\icls client\;c:\windows\system32;c:\windows;c:\windows\system32\wbem;c:\windows\system32\windowspowershell\v1.0\;c:\program files (x86)\intel\intel(r) management engine components\dal;c:\program files\intel\intel(r) management engine components\dal;c:\program files (x86)\intel\intel(r) management engine components\ipt;c:\program files\intel\intel(r) management engine components\ipt;c:\program files (x86)\skype\phone\;c:\program files (x86)\windows live\shared;c:\windows\system32\config\systemprofile\.dnx\bin;c:\program files\microsoft dnx\dnvm\;c:\program files\microsoft sql server\130\tools\binn\;c:\program files\intel\wifi\bin\;c:\program files\common files\intel\wirelesscommon\;c:\program files (x86)\windows kits\8.1\windows performance toolkit\;c:\program files\git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\Carlos\Anaconda3\;C:\Program Files\nodejs\;C:\Program Files\PuTTY\;C:\WINDOWS\System32\OpenSSH\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\Carlos\scoop\apps\postgresql\current\bin;C:\Users\Carlos\scoop\shims;C:\Users\Carlos\Anaconda3;C:\Users\Carlos\Anaconda3\Library\mingw-w64\bin;C:\Users\Carlos\Anaconda3\Library\usr\bin;C:\Users\Carlos\Anaconda3\Library\bin;C:\Users\Carlos\Anaconda3\Scripts;C:\Ruby23-x64\bin;C:\RailsInstaller\Ruby2.2.0\bin;C:\RailsInstaller\Git\cmd;C:\RailsInstaller\Ruby2.3.0\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\Carlos\AppData\Local\Microsoft\WindowsApps;C:\Users\Carlos\AppData\Local\atom\bin;C:\Users\Carlos\AppData\Local\GitHubDesktop\bin;C:\Users\Carlos\AppData\Roaming\npm;C:\Program Files\PostgreSQL\10\bin;C:\Program Files\PostgreSQL\10\lib;C:\Program Files\Heroku\bin;C:\Program Files\Microsoft VS Code\bin;C:\Users\Carlos\AppData\Local\Microsoft\WindowsApps;;c:\Program Files\Git\usr\bin;c:\Program Files\Git\usr\share\vim\vim74;C:\Users\Carlos\Everything Python\CMDER\
+  c:\Users\Carlos\bin;.;C:\RailsInstaller\Git\local\bin;C:\RailsInstaller\Git\mingw\bin;C:\RailsInstaller\Git\bin;c:\programdata\oracle\java\javapath;c:\program files (x86)\intel\icls client\;c:\program files\intel\icls client\;c:\windows\system32;c:\windows;c:\windows\system32\wbem;c:\windows\system32\windowspowershell\v1.0\;c:\program files (x86)\intel\intel(r) management engine components\dal;c:\program files\intel\intel(r) management engine components\dal;c:\program files (x86)\intel\intel(r) management engine components\ipt;c:\program files\intel\intel(r) management engine components\ipt;c:\program files (x86)\skype\phone\;c:\program files (x86)\windows live\shared;c:\windows\system32\config\systemprofile\.dnx\bin;c:\program files\microsoft dnx\dnvm\;c:\program files\microsoft sql server\130\tools\binn\;c:\program files\intel\wifi\bin\;c:\program files\common files\intel\wirelesscommon\;c:\program files (x86)\windows kits\8.1\windows performance toolkit\;c:\program files\git\cmd;c:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;c:\Users\Carlos\Anaconda3\;c:\Program Files\nodejs\;c:\Program Files\PuTTY\;c:\WINDOWS\System32\OpenSSH\;c:\WINDOWS\system32;c:\WINDOWS;c:\WINDOWS\System32\Wbem;c:\WINDOWS\System32\WindowsPowerShell\v1.0\;c:\Users\Carlos\scoop\apps\postgresql\current\bin;c:\Users\Carlos\scoop\shims;c:\Users\Carlos\Anaconda3;c:\Users\Carlos\Anaconda3\Library\mingw-w64\bin;c:\Users\Carlos\Anaconda3\Library\usr\bin;c:\Users\Carlos\Anaconda3\Library\bin;c:\Users\Carlos\Anaconda3\Scripts;c:\Ruby23-x64\bin;c:\RailsInstaller\Ruby2.2.0\bin;C:\RailsInstaller\Git\cmd;c:\RailsInstaller\Ruby2.3.0\bin;c:\Program Files\Intel\WiFi\bin\;c:\Program Files\Common Files\Intel\WirelessCommon\;c:\Users\Carlos\AppData\Local\Microsoft\WindowsApps;c:\Users\Carlos\AppData\Local\atom\bin;c:\Users\Carlos\AppData\Local\GitHubDesktop\bin;c:\Users\Carlos\AppData\Roaming\npm;c:\Program Files\PostgreSQL\10\bin;c:\Program Files\PostgreSQL\10\lib;c:\Program Files\Heroku\bin;c:\Program Files\Microsoft VS Code\bin;c:\Users\Carlos\AppData\Local\Microsoft\WindowsApps;.
 
 Yarn version: 
   1.5.1
@@ -22,7 +22,8 @@ npm manifest:
     "license": "ISC",
     "scripts": {
       "serve": "live-server public/",
-      "build": "webpack",
+      "build:dev": "webpack",
+      "build:prod": "webpack -p"
       "dev-server": "webpack-dev-server",
       "test": "jest --config=jest.config.json"
     },
@@ -6587,17 +6588,10 @@ Lockfile:
       window-size "0.1.0"
 
 Trace: 
-  Error: Command failed.
-  Exit code: 3221225786
-  Command: C:\WINDOWS\system32\cmd.exe
-  Arguments: /d /s /c webpack-dev-server
-  Directory: C:\React-Course-Projects\expensify-app
-  Output:
-  
-      at ProcessTermError.MessageError (C:\Users\Carlos\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:186:110)
-      at new ProcessTermError (C:\Users\Carlos\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:226:113)
-      at ChildProcess.<anonymous> (C:\Users\Carlos\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:30281:17)
-      at emitTwo (events.js:126:13)
-      at ChildProcess.emit (events.js:214:7)
-      at maybeClose (internal/child_process.js:925:16)
-      at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
+  SyntaxError: c:\React-Course-Projects\expensify-app\package.json: Unexpected string in JSON at position 235
+      at JSON.parse (<anonymous>)
+      at c:\Users\Carlos\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:1036:59
+      at Generator.next (<anonymous>)
+      at step (c:\Users\Carlos\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:98:30)
+      at c:\Users\Carlos\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:109:13
+      at <anonymous>
