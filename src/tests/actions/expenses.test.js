@@ -105,7 +105,7 @@ test('should fetch the expenses from firebase', (done) => {
   const store = createMockStore({});
   store.dispatch(startSetExpenses()).then(() => {
     const actions = store.getActions();
-    expect(action[0]).toEqual({
+    expect(actions[0]).toEqual({
       type: 'SET_EXPENSES', 
       expenses
     });
