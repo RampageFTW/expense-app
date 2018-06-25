@@ -803,7 +803,7 @@ babel-plugin-transform-strict-mode@^6.24.1:
     babel-runtime "^6.22.0"
     babel-types "^6.24.1"
 
-babel-polyfill@^6.23.0:
+babel-polyfill@6.26.0, babel-polyfill@^6.23.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-polyfill/-/babel-polyfill-6.26.0.tgz#379937abc67d7895970adc621f284cd966cf2153"
   dependencies:
@@ -5075,12 +5075,6 @@ querystringify@0.0.x:
 querystringify@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/querystringify/-/querystringify-2.0.0.tgz#fa3ed6e68eb15159457c89b37bc6472833195755"
-
-raf@3.3.2:
-  version "3.3.2"
-  resolved "https://registry.yarnpkg.com/raf/-/raf-3.3.2.tgz#0c13be0b5b49b46f76d6669248d527cf2b02fe27"
-  dependencies:
-    performance-now "^2.1.0"
 
 raf@^3.3.2:
   version "3.4.0"
